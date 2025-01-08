@@ -85,11 +85,11 @@ num_lsb = 2
 bytes_to_recover= 10
 
 #Colours
-Home_BACK_COL = "#d0ecfd"
+Home_BACK_COL = "#ff0000"
 ButtonColour_1 = "#90eebf"
 ButtonColour_2 = "#f39797"
 ButtonColour_3 = "#E66A82"
-Banner_Colour_1 = "#fafad2"
+Banner_Colour_1 = "#fff000"
 Banner_Colour_2 = "#eee8aa"
 
 mainWindow.configure(bg=Home_BACK_COL)
@@ -106,7 +106,7 @@ def center_window(name,w, h):
     y = (hs/2) - (h/2)  #change hs/2 to hs/4 to left window up
     name.geometry('%dx%d+%d+%d' % (w, h, x, y))
 center_window(mainWindow,400, 400)
-mainWindow.title("Stage Tool")
+mainWindow.title("Stage Tool By TRHACKNON")
 mainWindow.resizable(FALSE,FALSE)
 
 #Main Backend Function Of Hide Image In Image And Extract Image From Image----------------------------
@@ -2004,7 +2004,7 @@ def show_About():
     About_banner_Frame = Frame(mainWindow,bd=5,relief=RAISED,bg=Banner_Colour_1,highlightthickness=3,highlightbackground=Banner_Colour_2)
 
     Label(mainWindow,text=" ",font=("arial",2),bg=Home_BACK_COL).pack()
-    About_Banner = Label(About_banner_Frame,text=" Stage Tool ",font=("elephant",35,ITALIC,UNDERLINE),bg=Banner_Colour_1)
+    About_Banner = Label(About_banner_Frame,text=" Stage Tool\n By TRHACKNON ",font=("elephant",35,ITALIC,UNDERLINE),bg=Banner_Colour_1)
     About_Banner.pack()
     Label(About_banner_Frame,text=" ",font=("arial",2),bg=Banner_Colour_1).pack()
     About_Description = Label(About_banner_Frame,text="A Steganography Tool That Allow\nUser To Hide Text & Text File\nBehind An Image & An Audio\nFile, It Also Allow You To Hide\nAn Image Behind An Image File.\nIt Use Least Significant Bit\n(LSB) Method To Hide Data\nBehind An Image Or Audio File.",font=("Lucida Calligraphy",14,ITALIC),bg=Banner_Colour_1)
@@ -2012,7 +2012,7 @@ def show_About():
     Label(About_banner_Frame,text=" ",font=("Lucida Calligraphy",4,ITALIC),bg=Banner_Colour_1).pack()
     About_Description2 = Label(About_banner_Frame,text=" Developed By ",font=("Lucida Calligraphy",14,ITALIC,UNDERLINE),bg=Banner_Colour_1)
     About_Description2.pack()
-    About_Description3 = Label(About_banner_Frame,text="~Hrishikesh Patra  ",font=("Lucida Calligraphy",14),bg=Banner_Colour_1)
+    About_Description3 = Label(About_banner_Frame,text="~TRHACKNON  ",font=("Lucida Calligraphy",14),bg=Banner_Colour_1)
     About_Description3.pack()
     About_banner_Frame.pack()
 
@@ -2022,7 +2022,7 @@ def show_About():
     HomeBtn.bind('<Enter>', HomeBtn_on_enter)
     HomeBtn.bind('<Leave>', HomeBtn_on_leave)
     Label(AboutFrame,text="                                                  ",background=Home_BACK_COL).pack(side=LEFT)
-    GITBtn = Button(AboutFrame,text="Hrishikesh Patra",font=("Javanese Text",10,ITALIC),borderwidth=0, relief=SUNKEN,background=Home_BACK_COL,fg="blue",activebackground=Home_BACK_COL,command=lambda:(webbrowser.open('https://github.com/Hrishikesh7665')))
+    GITBtn = Button(AboutFrame,text="TRHACKNON",font=("Javanese Text",10,ITALIC),borderwidth=0, relief=SUNKEN,background=Home_BACK_COL,fg="blue",activebackground=Home_BACK_COL,command=lambda:(webbrowser.open('https://github.com/tucommenceapousser')))
     GITBtn.pack(side=RIGHT)
     GITBtn.bind('<Enter>', GITBtn_on_enter)
     GITBtn.bind('<Leave>', GITBtn_on_leave)
